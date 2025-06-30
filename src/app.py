@@ -8,11 +8,13 @@ from datetime import datetime
 from flask import Flask, current_app
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from flask_migrate import Migrate
 
 class Base(DeclarativeBase):
   pass
 
 db = SQLAlchemy(model_class=Base)
+migrate = Migrate()
 
 
 
@@ -67,6 +69,7 @@ def create_app(test_config=None):
 
     # Initialize extensions
     db.init_app(app)
+    migrate.init_app(app, db)
 
     # Register blueprints
     from src.controllers import user
