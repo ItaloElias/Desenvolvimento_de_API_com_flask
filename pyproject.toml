@@ -7,7 +7,7 @@ packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
-flask = "*"
+flask = ">=2.2,<3.0"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-jwt-extended = "*"
