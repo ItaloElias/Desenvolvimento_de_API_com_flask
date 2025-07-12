@@ -3,7 +3,6 @@ name = "dio-bank"
 version = "0.1.0"
 description = ""
 authors = ["ItaloElias <italoelias17@gmail.com>"]
-readme = "README.md"
 packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
