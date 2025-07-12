@@ -9,7 +9,9 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "flask",
-    "flask-sqlalchemy"
+    "flask-sqlalchemy",
+    "psycopg2-binary",
+    "gunicorn"
 ]
 
 
