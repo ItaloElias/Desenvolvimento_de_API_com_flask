@@ -2,5 +2,11 @@
 
 set -e
 
-poetry run flask --app src.app db upgrade
-poetry run gunicorn src.wsgi:app --bind
+# Define a variável FLASK_APP de forma compatível com Flask 2.1
+export FLASK_APP=src.app
+
+# Executa as migrações do banco
+poetry run flask db upgrade
+
+# Inicia o servidor usando o app dentro da pasta src
+poetry run gunicorn src.app:app --bind 0.0.0.0:8000
