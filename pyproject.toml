@@ -3,7 +3,7 @@ name = "dio-bank"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "ItaloElias",email = "italoelias17@gmail.com"}
+    { name = "ItaloElias", email = "italoelias17@gmail.com" }
 ]
 readme = "README.md"
 requires-python = ">=3.12"
@@ -14,6 +14,8 @@ dependencies = [
     "gunicorn"
 ]
 
+[tool.poetry]
+packages = [{ include = "src" }]
 
 [tool.pytest.ini_options]
 addopts = "-ra -vvv"
