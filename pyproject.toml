@@ -1,21 +1,17 @@
-[project]
+[tool.poetry]
 name = "dio-bank"
 version = "0.1.0"
 description = ""
-authors = [
-    { name = "ItaloElias", email = "italoelias17@gmail.com" }
-]
+authors = ["ItaloElias <italoelias17@gmail.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "flask",
-    "flask-sqlalchemy",
-    "psycopg2-binary",
-    "gunicorn"
-]
-
-[tool.poetry]
 packages = [{ include = "src" }]
+requires-python = ">=3.12"
+
+[tool.poetry.dependencies]
+flask = "*"
+flask-sqlalchemy = "*"
+psycopg2-binary = "*"
+gunicorn = "*"
 
 [tool.pytest.ini_options]
 addopts = "-ra -vvv"
