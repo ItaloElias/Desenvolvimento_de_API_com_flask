@@ -14,8 +14,6 @@ flask-marshmallow = "*"
 apispec-webframeworks = "*"
 flask-bcrypt = "*"
 marshmallow-sqlalchemy = "*"
-sqlalchemy = "*"
-flask-jwt-extended = "*"
 
 [build-system]
 requires = ["poetry-core"]
