@@ -7,12 +7,14 @@ packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = ">=3.12"
-flask = ">=2.2,<3.0"
+flask = "2.1.*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-jwt-extended = "*"
 psycopg2-binary = "*"
 gunicorn = "*"
+werkzeug = "<2.1"
+
 
 [tool.pytest.ini_options]
 addopts = "-ra -vvv"
