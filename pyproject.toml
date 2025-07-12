@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-jwt-extended = "*"
 psycopg2-binary = "*"
+sqlalchemy = "<2.0"
 gunicorn = "*"
 werkzeug = "<2.1"
 
